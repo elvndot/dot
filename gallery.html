@@ -1,0 +1,558 @@
+
+<!--  -->
+
+<!--  -->
+
+<!--  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+        <style>
+            /* MOBILE */
+            @media only screen and (min-width: 250px){
+
+            h1{
+            font-size: 4em;
+            padding: 20px;
+            }
+            h2{
+                font-size: 3em;
+                padding: 20px; 
+            }
+            h3{
+                font-size: 2em;
+                padding: 20px;
+            }
+            p{
+                padding-top: 0px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            }
+
+            /* TABLET */
+            @media only screen and (min-width: 500px){
+            h1{
+            font-size: 6em;
+            padding: 20px;
+            }
+            p{
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            h2{
+                font-size: 3em;
+                padding: 20px; 
+            }
+            h3{
+                font-size: 2em;
+                padding: 20px;
+            }
+            p{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            }
+
+            /* DESKTOP */
+            @media only screen and (min-width: 720px){
+            h1{
+            font-size: 15em;
+            padding: 20px;
+            
+            }
+            p{
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            h2{
+                font-size: 3em;
+                padding: 20px; 
+            }
+            h3{
+                font-size: 2em;
+                padding: 20px;
+            }
+            p{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            }
+
+            * body{
+                font-family: Arial, Helvetica, sans-serif;
+                transition: 2s;
+                color: azure;
+                background-color:rgb(41, 116, 255);
+
+                margin: 20px;
+                
+            }
+            body:hover{
+                font-family: Arial, Helvetica, sans-serif;
+                transition: 2s;
+                color: azure;
+                background-color:rgba(0, 0, 255, 0.603);
+                margin: 20px;
+                
+            }
+            .body{
+                /* background-image: url("img/G/G4.png"); */
+                padding: 50px;
+                transition: 1s;
+            }
+            .body:hover{
+                /* background-image: url("img/G/G4.png"); */
+                color: aqua;
+                padding: 50px;
+                transition: 1s;
+            }
+
+            /* p{
+                font-weight: bold;
+                font-size: 1.5em;
+                padding-top: 5px;
+            } */
+            /* .mobile-contianer{
+                max-width: 100%;
+                margin: auto;
+                background-color: rgba(226, 226, 226, 0.438);
+                height: 500px;
+                color: black;
+                border-radius: 10px;
+            } */
+            .topnav{
+                overflow: hidden;
+                background-color: rgb(255, 15, 55);
+                position: relative;
+                transition: 2s;
+            }
+            .topnav #myLinks{
+                display: none;
+            }
+            .topnav #myLinks:hover{
+                display: none;
+                background-color: rgb(250, 46, 80);
+            }
+
+            .topnav{
+                overflow: hidden;
+                background-color: rgb(2, 5, 165);
+                position: relative;
+                transition: 2s;
+                padding: 20px;
+            }
+            .topnav #myLinks{
+                display: none;
+            }
+            .topnav #myLinks:hover{
+                display: none;
+                background-color: rgb(0, 21, 90);
+            }
+
+            .topnav a{
+                color: white;
+                padding: 20px 50px;
+                text-decoration: none;
+                font-size: 20px;
+                display: block;
+            }
+            .topnav a.icon{
+                background: rgb(0, 225, 255);
+                display: block;
+                position: absolute;
+                right: 10px;
+                width: 50px;
+                top: 10px;
+                transition: 2s;
+            }
+            .topnav a.icon:hover{
+                background-color: rgb(0, 156, 228);
+                color: rgb(255, 142, 142);
+                transition: 2s;
+                
+            }
+            .active{
+                background-color: rgb(0, 4, 255);
+                color: white;
+                transition: 1s;
+            }   
+            .active:hover{
+                background-color: rgb(77, 80, 255);
+                padding-top: 50px;
+                padding-bottom: 50px;
+                color: white;
+                transition: 1s;
+            }  
+
+            .menu-links{
+                transition: 1s;
+                
+            }
+            
+            .menu-links:hover{
+                color: rgb(0, 255, 255);
+                font-weight: bold;
+                transition: 1s;
+            }
+            .menu-links-gallery{
+
+                background-color: rgba(0, 119, 255, 0.5);
+                transition: 1s;
+                
+            }
+            
+            .menu-links-gallery:hover{
+                color: rgb(0, 255, 255);
+                font-weight: bold;
+                transition: 1s;
+            }
+            .fa fa-bars{
+                color: red;
+
+            }  
+            .footer{
+                padding-top: 80px;
+            }
+
+
+            /*  */
+
+            @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+            .container {
+            color: #e5e5e5;
+            font-size: 2em;
+            text-transform: uppercase;
+            /* height: 100vh; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 1s;
+            }
+            .container:hover{
+            color: #e5e5e5;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 1s;
+
+            }
+
+            .animation {
+            height:50px;
+            overflow:hidden;
+            margin-left: 0.5em;
+            }
+
+            .animation > div > div {
+            padding: 0.25rem 0.75rem;
+            height:2.81rem;
+            margin-bottom: 2.81rem;
+            display:inline-block;
+            }
+
+            .animation div:first-child {
+            animation: text-animation 8s infinite;
+            }
+            
+            .first div {
+            color: aqua;
+            font-weight: bold;
+            transition: 1s;
+            }
+            .second div {
+            color: rgba(0, 255, 255, 0.705);
+            font-weight: bold;
+            transition: 1s;
+            }
+            .third div {
+            color: rgba(0, 255, 255, 0.555);
+            font-weight: bold;
+            transition: 1s;
+            } 
+
+            .first div:hover {
+            color: rgb(183, 0, 255);
+            font-weight: bold;
+            transition: 1s;
+            }
+            .second div:hover {
+            color: rgb(115, 8, 255);
+            font-weight: bold;
+            transition: 1s;
+            }
+            .third div:hover {
+            color: rgb(47, 0, 255);
+            font-weight: bold;
+            transition: 1s;
+            } 
+
+            @keyframes text-animation {
+            0% {margin-top: 0;}
+            10% {margin-top: 0;}
+            20% {margin-top: -5.62rem;}
+            30% {margin-top: -5.62rem;}
+            40% {margin-top: -11.24rem;}
+            50% {margin-top: -12.24rem;}
+            60% {margin-top: -11.24rem;}
+            70% {margin-top: -5.62rem;}
+            80% {margin-top: -5.62rem;}
+            90% {margin-top: 0.5rem;}
+            100% {margin-top: 0;}
+            }
+
+            /* IMAGES */
+
+            .GTR{
+            padding-bottom: 20px;
+            margin-left: 25px;
+            transition: 1s;
+            border-radius: 10px; 
+            }
+            .GTR:hover{
+            margin-left: 25px;
+            background-color: rgb(255, 0, 212);
+            transition: 1s;
+            }
+
+            .MP1{
+            padding-bottom: 20px;
+            margin-left: 25px;
+            /* padding: 8px; */
+            transition: 1s;
+            border-radius: 20px;
+            }
+            .MP1:hover{
+            margin-left: 25px;
+            opacity: 100%;
+            background-color: rgb(255, 115, 0);
+            transform: rotate3d(100%);
+            transition: 1s;
+            }
+
+            /*  */
+
+            .G63{
+            padding-top: 20px;
+            margin-left: 25px;
+            /* padding: 8px; */
+            transition: 1s;
+            border-radius: 20px;
+            }
+            .G63:hover{
+            margin-left: 25px;
+            opacity: 100%;
+            background-color: rgb(255, 41, 41);
+            transform: rotate3d(100%);
+            transition: 1s;
+            }
+            /*  */
+            .img-session{
+            background-color: pink;
+            width: 100%;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            transition: 4s;
+            animation: backwards;
+            border-radius: 20px;
+            transition:ease-in-out;
+
+            display: block;
+            }
+            .img-session:hover{
+            width: 100%;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            transition: 1s;
+            transition:ease-in-out;
+            animation: backwards;
+            }
+
+            /*  */
+            .img-session1{
+            background-color: orange;
+            width: 100%;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            transition: 4s;
+            animation: backwards;
+            border-radius: 20px;
+            transition:ease-in-out;
+            }
+            .img-session1:hover{
+            width: 100%;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            transition: 1s;
+            transition:ease-in-out;
+            animation: backwards;
+            }
+
+            /*  */
+            .img-session2{
+            background-color: rgb(255, 0, 0);
+            width: 100%;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            transition: 4s;
+            animation: backwards;
+            border-radius: 20px;
+            transition:ease-in-out;
+            }
+            .img-session2:hover{
+            width: 100%;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            transition: 1s;
+            transition:ease-in-out;
+            animation: backwards;
+            }
+
+        </style>
+        </head>
+        <body>
+
+        <!--  Cell phone simulation-->
+        <!-- class="mobile-contianer" -->
+    <div >
+
+        <!--  Top nav menu -->
+
+        <div class="topnav">
+            <a href="index.html" class="active">ELVNDOT</a>
+            <div id="myLinks">
+                <a href="albums.html" class="menu-links">New</a>
+                <a href="gallery.html" class="menu-links-gallery">Gallery</a>
+                <a href="music.html" class="menu-links">Music</a>
+                <a href="blog.html" class="menu-links">Blog</a>
+                <a href="about.html" class="menu-links">About</a>
+            </div>
+            <a href = "javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div>
+            <div class="body">
+                <h1>WALK IN GALLERY</h1>
+                <!-- <img class="elvn.landing" src="img/Age.png" alt="Elvn BG" style="width:100%"> -->
+
+                
+                <main class="container">
+                    <!-- <p>Hi, It's </p> -->
+                  
+                    <section class="animation">
+                      <div class="first">
+                        <div>Art</div>
+                          </div>
+                      <div class="second">
+                        <div>Images</div>
+                          </div>
+                      <div class="third">
+                        <div>Videos</div>
+                          </div>
+                    </section>
+                  </main>
+
+
+            </div>
+            <h2>.</h2>
+
+            <!--  -->
+            <!--  -->
+            <div class="img-session">
+                <div>
+                <h3>Nissan GTR 35 Collection</h3>
+                  <img class="GTR" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="img/GTR/GTR02.png" alt="GTR" width="40%">
+                  <img class="GTR" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src= "img/GTR/GTR03.png" alt="GTR" width="40%">
+                  <!-- <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="img/Age.png" alt="AGE" width="20%">
+                  <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="img/Age.png" alt="AGE" width="20%"> -->
+                </div>
+                <div>
+                    <img class="GTR" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="img/GTR/GTR04.png" alt="GTR" width="40%">
+                    <img class="GTR" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src= "img/GTR/GTR01.png" alt="GTR" width="40%">
+
+                </div>
+            </div>
+            <h3>Mclaren P1 Collection</h3>
+            <div class="img-session1">
+                <div>
+
+                  <img class="MP1" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="img/P/P1-01.png" alt="P1" width="40%">
+                  <img class="MP1" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src= "img/P/P1-02.png" alt="P1" width="40%">
+                </div>
+                <div>
+                    <img class="MP1" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="img/P/P1-03.png" alt="P1" width="40%">
+                    <img class="MP1" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src= "img/P/P1-04.png" alt="P1" width="40%">
+                </div>
+            </div>
+
+
+            <h3>Mercedes G Wagon Collection</h3>
+            <div class="img-session2">
+                <div>
+
+                  <img class="G63" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="img/G/G3.png" alt="G63" width="40%">
+                  <img class="G63" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src= "img/G/G2.png" alt="G63" width="40%">
+                </div>
+                <div>
+                    <img class="G63" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="img/G/G5.png" alt="G63" width="40%">
+                    <img class="G63" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src= "img/G/G4.png" alt="G63" width="40%">
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="footer">
+                <footer>www.elvndot.com</footer>
+            </div>
+        </div>
+
+        
+
+    <!-- JS -->
+     <!-- MENU -->
+    <script>
+            function myFunction(){
+                var x = 
+                document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                }
+                    else{
+                        x.style.display = "block";
+                    }
+                }
+    </script>
+
+    <!-- IMAGES -->
+
+
+    <script>
+        function bigImg(x) {
+          x.style.height = "50%";
+          x.style.width = "50%";
+        }
+        
+        function normalImg(x) {
+          x.style.height = "40%";
+          x.style.width = "40%";
+        }
+        </script>
+
+</body>
+</html>

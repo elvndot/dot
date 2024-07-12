@@ -1,0 +1,465 @@
+
+<!--  -->
+
+<!--  -->
+
+<!--  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+        <style>
+            /* MOBILE */
+            @media only screen and (min-width: 250px){
+
+            h1{
+            font-size: 4em;
+            padding: 20px;
+            }
+            h2{
+                font-size: 3em;
+                padding: 20px; 
+            }
+            h3{
+                font-size: 2em;
+                padding: 20px;
+            }
+            p{
+                padding-top: 0px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            body{
+              color: white;
+            }
+            }
+
+            /* TABLET */
+            @media only screen and (min-width: 500px){
+            h1{
+            font-size: 4em;
+            padding: 20px;
+            }
+            p{
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            h2{
+                font-size: 2em;
+                padding: 20px; 
+            }
+            h3{
+                font-size: 1em;
+                padding: 20px;
+            }
+            p{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            body{
+              color: white;
+            }
+            }
+
+            /* DESKTOP */
+            @media only screen and (min-width: 720px){
+            h1{
+            font-size: 15em;
+            padding: 20px;
+            
+            }
+            p{
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            h2{
+                font-size: 3em;
+                padding: 20px; 
+            }
+            h3{
+                font-size: 2em;
+                padding: 20px;
+            }
+            p{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            body{
+              color: white;
+            }
+            }
+
+            * body{
+                font-family: Arial, Helvetica, sans-serif;
+                transition: 2s;
+                color: white;
+                /* background-image: url("img/Age.png") */
+                background-color: aqua;
+                margin: 20px;
+            
+            }
+            /* p{
+                font-weight: bold;
+                font-size: 1.5em;
+                padding-top: 5px;
+            } */
+            /* .mobile-contianer{
+                max-width: 100%;
+                margin: auto;
+                background-color: rgba(226, 226, 226, 0.438);
+                height: 500px;
+                color: black;
+                border-radius: 10px;
+            } */
+            .topnav{
+                overflow: hidden;
+                background-color: rgb(2, 5, 165);
+                position: relative;
+                transition: 2s;
+                padding: 20px;
+            }
+            .topnav #myLinks{
+                display: none;
+            }
+            .topnav #myLinks:hover{
+                display: none;
+                background-color: rgb(0, 21, 90);
+            }
+
+            .topnav a{
+                color: white;
+                padding: 20px 50px;
+                text-decoration: none;
+                font-size: 20px;
+                display: block;
+            }
+            .topnav a.icon{
+                background: rgb(0, 225, 255);
+                display: block;
+                position: absolute;
+                right: 10px;
+                width: 50px;
+                top: 10px;
+                transition: 2s;
+            }
+            .topnav a.icon:hover{
+                background-color: rgb(0, 156, 228);
+                color: rgb(255, 142, 142);
+                transition: 2s;
+                
+            }
+            .active{
+                background-color: rgb(0, 4, 255);
+                color: white;
+                transition: 1s;
+            }   
+            .active:hover{
+                background-color: rgb(77, 80, 255);
+                padding-top: 50px;
+                padding-bottom: 50px;
+                color: white;
+                transition: 1s;
+            }  
+
+            .menu-links{
+                transition: 1s;
+                
+            }
+            
+            .menu-links:hover{
+                color: rgb(0, 255, 255);
+                font-weight: bold;
+                transition: 1s;
+            }
+            .menu-links-album{
+
+                background-color: rgba(0, 119, 255, 0.5);
+                transition: 1s;
+                
+            }
+            
+            .menu-links-album:hover{
+                color: rgb(0, 255, 255);
+                font-weight: bold;
+                transition: 1s;
+            }
+            .fa fa-bars{
+                color: red;
+
+            }
+            .table-class{
+                background-image: url("img/G.png");
+                color:cyan;
+                font-weight: bold;
+                padding-left: 50px;
+                padding-bottom: 50px;
+                padding-top: 50px;
+
+                transition: 1.5s;
+                border-style:solid;
+                border-width: 10px;
+                border-color: rgba(0, 68, 255, 0.288);
+            }
+
+            .table-class:hover{
+                background-image: url("img/G.png");
+                color:cyan;
+                font-weight: bold;
+                padding-left: 50px;
+                padding-bottom: 50px;
+                padding-top: 80px;
+
+                transition: 1.5s;
+                border-style:solid;
+                border-width: 10px;
+                border-color: rgba(0, 68, 255, 0.75);
+            }
+
+            .table-class2{
+                background-image: url("img/G46.png");
+                color:white;
+                font-weight: bold;
+                padding-left: 50px;
+                padding-bottom: 50px;
+                padding-top: 50px;
+
+                transition: 1.5s;
+                border-style:solid;
+                border-width: 10px;
+                border-color: rgba(255, 255, 255, 0.288);
+
+            }
+
+            .table-class2:hover{
+                background-image: url("img/G46.png");
+                color:white;
+                font-weight: bold;
+                padding-left: 50px;
+                padding-bottom: 80px;
+                padding-top: 80px;
+
+                transition: 1.5s;
+                border-style:solid;
+                border-width: 10px;
+                border-color: rgba(255, 255, 255, 0.75);
+
+            }
+
+            .table-class3{
+                background-image: url("img/G2.png");
+                color:rgb(255, 217, 0);
+                font-weight: bold;
+                padding-left: 50px;
+                padding-bottom: 50px;
+                padding-top: 50px;
+
+                transition: 1.5s;
+                border-style:solid;
+                border-width: 10px;
+                border-color: rgba(0, 255, 255, 0.288);
+            }
+
+            .table-class3:hover{
+                background-image: url("img/G2.png");
+                color:rgb(255, 217, 0);
+                font-weight: bold;
+                padding-left: 50px;
+                padding-bottom: 50px;
+                padding-top: 80px;
+
+                transition: 1.5s;
+                border-style:solid;
+                border-width: 10px;
+                border-color: rgba(0, 255, 255, 0.75);
+            }
+            .table-div{
+              padding-top: 20px;
+              padding-bottom: 20px;
+            }
+            .footer{
+                padding-top: 80px;
+            }
+   
+        </style>
+        </head>
+        <body>
+
+        <!--  Cell phone simulation-->
+        <!-- class="mobile-contianer" -->
+    <div >
+
+        <!--  Top nav menu -->
+
+        <div class="topnav">
+          <a href="index.html" class="active">ELVNDOT</a>
+          <div id="myLinks">
+              <a href="albums.html" class="menu-links-album">New</a>
+              <a href="gallery.html" class="menu-links">Gallery</a>
+              <a href="music.html" class="menu-links">Music</a>
+              <a href="blog.html" class="menu-links">Blog</a>
+              <a href="about.html" class="menu-links">About</a>
+          </div>
+          <a href = "javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+      </div>
+
+        <div>
+            <h1 >ALBUMS</h1>
+            <!-- <img class="elvn.landing" src="img/Age.png" alt="Elvn BG" style="width:100%"> -->
+
+            <h2>AGE</h2>
+            <h4>Track List</h4>
+
+        <div class="table-class">
+
+            <table class="table-div">
+          
+              <tr>
+                <td><p>OK (instrumental)</p></td>
+                <td><p>Hope It Works (live)</p></td>
+              </tr> 
+
+              <tr>
+                <td><p>F.M.L (live)</p></td>
+                <td><p>Bentely Truck</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>Senora</p></td>
+                <td><p>Ghost</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>Weight On My Shoulders</p></td>
+                <td><p>The Truth</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>Soulful</p></td>
+                <td><p>Can I See</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>Going Through Hell, But You Don't Need To Know</p></td>
+                <td><p>As Requested</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>Sorry</p></td>
+                <td><p>Typical</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>Endless</p></td>
+                <td><p>Don't Let Me Lose U</p></td>
+              </tr>
+                
+            </table>
+          </div>
+<!--  -->
+<!-- 2 -->
+          <div class="table-class2">
+
+            <table>
+              <tr>
+                <td><p>I.L.Y</p></td>
+                <td><p>Stay</p></td>
+              </tr>
+
+              <tr>
+                <td><p>Subtitles (care)</p></td>
+                <td><p>Sunday Blues</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>Why Do You Keep Targeting Me</p></td>
+                <td><p>Cali</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>Don't Try To Hurt Me</p></td>
+                <td><p>And And These Days</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>People Come & Then</p></td>
+                <td><p>Out Of Sight Out Of</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>Conspiracy Theory</p></td>
+                <td><p>I Don't Believe You</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>Unified</p></td>
+                <td><p>Contradiction</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>Stratosphere</h3></td>
+                <td><p>Truancy</p></td>
+              </tr>
+          
+              <tr>
+                <td><p>All Thee Best</p></td>
+                <td><p>Maybe Later Aligator</p></td>
+              </tr>
+              
+            </table>
+          </div>
+          <!--  -->
+          <!-- 3 -->
+
+          <div class="table-class3">
+
+            <table>
+          
+              <tr>
+                <td><p>Way Back</p></td>
+                <td><p>04.2090.ai</p></td>
+              </tr>
+
+              <tr>
+                <td><p>The Awaiting Period [-0.365]</p></td>
+                <td><p>B A</p></td>
+              </tr>
+
+              <tr>
+                <td><p>Remittance</p></td>
+                <td><p>You Special</p></td>
+              </tr>
+          
+            </table>
+          </div>
+          
+        </div>
+                    <!--  -->
+                    <div class="footer">
+                      <footer>www.elvndot.com</footer>
+                  </div>
+    </div>
+
+    <!-- JS -->
+    <script>
+            function myFunction(){
+                var x = 
+                document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                }
+                    else{
+                        x.style.display = "block";
+                    }
+                }
+    </script>
+
+</body>
+</html>

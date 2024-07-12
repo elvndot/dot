@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+ /* MOBILE */
+ @media only screen and (min-width: 250px){
+
+h1{
+font-size: 4em;
+padding: 20px;
+}
+h2{
+    font-size: 3em;
+    padding: 20px; 
+}
+h3{
+    font-size: 2em;
+    padding: 20px;
+}
+h4{
+    font-size: 1em;
+    padding: 20px;
+}
+p{
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body{
+  color: white;
+}
+}
+
+/* TABLET */
+@media only screen and (min-width: 500px){
+h1{
+font-size: 4em;
+padding: 20px;
+}
+p{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+h2{
+    font-size: 2em;
+    padding: 20px; 
+}
+h3{
+    font-size: 1em;
+    padding: 20px;
+}
+h4{
+    font-size: 1em;
+    padding: 20px;
+}
+p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body{
+  color: white;
+}
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 720px){
+h1{
+font-size: 15em;
+padding: 20px;
+
+}
+p{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+h2{
+    font-size: 3em;
+    padding: 20px; 
+}
+h3{
+    font-size: 2em;
+    padding: 20px;
+    color: black;
+}
+h4{
+    font-size: 1em;
+    padding: 20px;
+}
+p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body{
+  color: white;
+}
+}
+* body{
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 2s;
+    color: white;
+    /* background-image: url("img/Age.png") */
+    background-color: aqua;
+    margin: 20px;
+    background-image: url("img/G/G-02.png");
+}
+/* .mobile-contianer{
+    max-width: 100%;
+    margin: auto;
+    background-color: rgba(226, 226, 226, 0.438);
+    height: 500px;
+    color: black;
+    border-radius: 10px;
+} */
+.topnav{
+    overflow: hidden;
+    background-color: rgb(2, 5, 165);
+    position: relative;
+    transition: 2s;
+    padding: 20px;
+}
+.topnav #myLinks{
+    display: none;
+}
+.topnav #myLinks:hover{
+    display: none;
+    background-color: rgb(0, 21, 90);
+}
+
+.topnav a{
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+.topnav a.icon{
+    background: rgb(0, 225, 255);
+    display: block;
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    top: 10px;
+    transition: 2s;
+}
+.topnav a.icon:hover{
+    background-color: rgb(0, 156, 228);
+    color: rgb(255, 142, 142);
+    transition: 2s;
+    
+}
+.active{
+    background-color: rgb(0, 4, 255);
+    color: white;
+    transition: 1s;
+}   
+.active:hover{
+    background-color: rgb(77, 80, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    transition: 1s;
+}  
+
+.menu-links{
+    transition: 1s;
+    
+}
+
+.menu-links:hover{
+    color: rgb(0, 255, 255);
+    font-weight: bold;
+    transition: 1s;
+}
+.menu-links-blog{
+
+    background-color: rgba(0, 119, 255, 0.5);
+    transition: 1s;
+    
+}
+
+.menu-links-blog:hover{
+    color: rgb(0, 255, 255);
+    font-weight: bold;
+    transition: 1s;
+}
+.fa fa-bars{
+    color: red;
+
+}
+.table-class{
+    background-image: url("img/G.png");
+    color:cyan;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    transition: 1.5s;
+    border-style:solid;
+    border-width: 10px;
+    border-color: rgba(0, 68, 255, 0.288);
+}
+
+.table-class:hover{
+    background-image: url("img/G.png");
+    color:cyan;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 80px;
+
+    transition: 1.5s;
+    border-style:solid;
+    border-width: 10px;
+    border-color: rgba(0, 68, 255, 0.75);
+}
+
+.table-class2{
+    background-image: url("img/G46.png");
+    color:white;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    transition: 1.5s;
+    border-style:solid;
+    border-width: 10px;
+    border-color: rgba(255, 255, 255, 0.288);
+
+}
+
+.table-class2:hover{
+    background-image: url("img/G46.png");
+    color:white;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+
+    transition: 1.5s;
+    border-style:solid;
+    border-width: 10px;
+    border-color: rgba(255, 255, 255, 0.75);
+
+}
+
+.table-class3{
+    background-image: url("img/G2.png");
+    color:rgb(255, 217, 0);
+    font-weight: bold;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    transition: 1.5s;
+    border-style:solid;
+    border-width: 10px;
+    border-color: rgba(0, 255, 255, 0.288);
+}
+
+.table-class3:hover{
+    background-image: url("img/G2.png");
+    color:rgb(255, 217, 0);
+    font-weight: bold;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 80px;
+
+    transition: 1.5s;
+    border-style:solid;
+    border-width: 10px;
+    border-color: rgba(0, 255, 255, 0.75);
+}
+.table-div{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer{
+    padding-top: 80px;
+}
+
+/*  */
+/*  */
+/*  */
+.accordion {
+  background-color: #eee;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 2em;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  color: black;
+  font-size: 1.2em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  transition: 1s;
+}
+.panel:hover {
+  padding: 0 18px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: rgb(48, 48, 48);
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  transition: 1s;
+}
+.h1-class{
+  color: white; 
+  transition: 1s; 
+}
+.h1-class:hover{
+color: black; 
+transition: 1s; 
+}
+
+
+</style>
+</head>
+<body>
+
+  <div >
+
+    <!--  Top nav menu -->
+
+    <div class="topnav">
+      <a href="index.html" class="active">Hi</a>
+      <div id="myLinks">
+          <a href="albums.html" class="menu-links">New</a>
+          <a href="gallery.html" class="menu-links">Gallery</a>
+          <a href="music.html" class="menu-links">Music</a>
+          <a href="blog.html" class="menu-links-blog">Blog</a>
+          <a href="about.html" class="menu-links">About</a>
+      </div>
+      <a href = "javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+    <div>
+        <h1 class="h1-class">BLOG</h1>
+        <!-- <img class="elvn.landing" src="img/Age.png" alt="Elvn BG" style="width:100%"> -->
+
+
+<!--  -->
+
+<!--  -->
+
+<h3>Welcome to my literature world.</h3>
+<h4>Here you will have to be accustomed to tails, fiction and reality.</h4>
+
+<!-- 1 -->
+<button class="accordion"><h3>5 Reasons Why Making Music Can Improve Your Quality Of Life.</h3></button>
+
+<div class="panel">
+  <p>1. Music can be used to relief stress. </p>
+  <p>2. It allows one to freely expres themselves.</p>
+  <p>3. Music gives you a platform to showcase and perform.</p>
+  <p>4. By listening to music we are able to relate or interpret different perceptions of life.</p>
+  <p>5. Depending on how you approach the industry you can make a decent income revenue.</p>
+</div>
+
+<!-- 2 -->
+<button class="accordion"><h3>10 Things You Can Do To Improve Your Life</h3></button>
+
+<div class="panel">
+  <p>1. Have a partner that you can confide in.</p>
+  <p>2. Do what you actually enjoy.</p>
+  <p>3. Learn new tricks and skills regularly.</p>
+  <p>4. Read books and content that bolsters your personality.</p>
+  <p>5. Eat healthy.</p>
+  <h3>Wait, whats the guarantee that this will work?</h3>
+
+  <p>6. Trust in yourself to accomplish.</p>
+  <p>7. Find new and fun ways to make money.</p>
+  <p>8. Approach life with love and warmth.</p>
+  <p>9. Make use of the technology that is always being innovated.</p>
+  <p>10. Create, or atleast try to.</p>
+</div>
+
+<!-- 3 -->
+<button class="accordion"><h3>Realtionship Goals Worth Investing In.</h3></button>
+
+<div class="panel">
+  <p>1. Intimacy.</p>
+  <p>2. Travelling.</p>
+  <p>3. Learning together.</p>
+  <p>4. Starting a business</p>
+  <p>5. Achieving financial milestones.</p>
+</div>
+
+<!-- 4 -->
+<button class="accordion"><h3>10 Careers That Can Make You Wealthy</h3></button>
+
+<div class="panel">
+  <p>1. Software Developer</p>
+  <p>2. Cybersecurity Engineers</p>
+  <p>3. Real Estate Agent</p>
+  <p>4. Pilot</p>
+  <p>5. Scientist</p>
+  <p>6. Inventing Technology</p>
+  <p>7. Astronomist</p>
+  <p>8. Travel Agent</p>
+  <p>9. Creating Art.</p>
+  <p>10. Making Law</p>
+</div>
+
+
+    <!-- JS -->
+  <script>
+    function myFunction(){
+        var x = 
+        document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        }
+            else{
+                x.style.display = "block";
+            }
+        }
+  </script>
+
+
+<!--  -->
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+
+
+</body>
+</html>

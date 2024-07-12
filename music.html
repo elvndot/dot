@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+
+            /* MOBILE */
+            @media only screen and (min-width: 250px){
+
+h1{
+font-size: 4em;
+padding: 20px;
+}
+h2{
+    font-size: 3em;
+    padding: 20px; 
+}
+h3{
+    font-size: 2em;
+    padding: 20px;
+}
+p{
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+
+/* TABLET */
+@media only screen and (min-width: 500px){
+h1{
+font-size: 6em;
+padding: 20px;
+}
+p{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+h2{
+    font-size: 3em;
+    padding: 20px; 
+}
+h3{
+    font-size: 2em;
+    padding: 20px;
+}
+p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 720px){
+h1{
+font-size: 15em;
+padding: 20px;
+
+}
+p{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+h2{
+    font-size: 3em;
+    padding: 20px; 
+}
+h3{
+    font-size: 2em;
+    padding: 20px;
+}
+p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+
+* body{
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 2s;
+    color: azure;
+    background-color:blue;
+    margin: 20px;
+    
+
+}
+.body{
+    background-image: url("img/G.png");
+    padding: 50px;
+    transition: 1s;
+}
+.body:hover{
+    background-image: url("img/G.png");
+    color: aqua;
+    padding: 50px;
+    transition: 1s;
+}
+
+/* p{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 5px;
+} */
+/* .mobile-contianer{
+    max-width: 100%;
+    margin: auto;
+    background-color: rgba(226, 226, 226, 0.438);
+    height: 500px;
+    color: black;
+    border-radius: 10px;
+} */
+.topnav{
+    overflow: hidden;
+    background-color: rgb(255, 15, 55);
+    position: relative;
+    transition: 2s;
+}
+.topnav #myLinks{
+    display: none;
+}
+.topnav #myLinks:hover{
+    display: none;
+    background-color: rgb(250, 46, 80);
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: rgb(2, 5, 165);
+    position: relative;
+    transition: 2s;
+    padding: 20px;
+}
+.topnav #myLinks{
+    display: none;
+}
+.topnav #myLinks:hover{
+    display: none;
+    background-color: rgb(0, 21, 90);
+}
+
+.topnav a{
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+.topnav a.icon{
+    background: rgb(0, 225, 255);
+    display: block;
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    top: 10px;
+    transition: 2s;
+}
+.topnav a.icon:hover{
+    background-color: rgb(0, 156, 228);
+    color: rgb(255, 142, 142);
+    transition: 2s;
+    
+}
+.active{
+    background-color: rgb(0, 4, 255);
+    color: white;
+    transition: 1s;
+}   
+.active:hover{
+    background-color: rgb(77, 80, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    transition: 1s;
+}  
+
+.menu-links{
+    transition: 1s;
+    
+}
+
+.menu-links:hover{
+    color: rgb(0, 255, 255);
+    font-weight: bold;
+    transition: 1s;
+}
+.menu-links-music{
+
+    background-color: rgb(0, 119, 255);
+    transition: 1s;
+    
+}
+
+.menu-links-music:hover{
+    color: rgb(0, 255, 255);
+    font-weight: bold;
+    transition: 1s;
+}
+.fa fa-bars{
+    color: red;
+
+}  
+.footer{
+    padding-top: 80px;
+}
+
+
+/*  */
+/*  */
+/*  */
+
+
+* {box-sizing: border-box
+}
+
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+  margin-left: -50px;
+  margin-right: 50px;
+
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 25px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #0469ec;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 0px;
+  padding-top: 20px ;
+  padding-bottom: 80px;
+  /* border: 1px solid #ccc; */
+  width: 70%;
+  border-left: none;
+  height: 500px;
+}
+#defaultOpen{
+  background-color: rgba(255, 0, 191, 0.411);
+}
+#defaultOpen:hover{
+  background-color: rgb(255, 0, 191);
+}
+</style>
+</head>
+<body>
+
+
+  <div >
+
+    <!--  Top nav menu -->
+
+    <div class="topnav">
+        <a href="index.html" class="active">ELVNDOT</a>
+        <div id="myLinks">
+          <a href="albums.html" class="menu-links">New</a>
+            <a href="gallery.html" class="menu-links">Gallery</a>
+            <a href="music.html" class="menu-links-music">Music</a>
+            <a href="blog.html" class="menu-links">Blog</a>
+            <a href="about.html" class="menu-links">About</a>
+        </div>
+        <a href = "javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div>
+        <div class="body">
+            <h1>MUSIC</h1>
+            <h2>.COLLECTION</h2>
+
+
+  <!--  -->
+<!--  -->
+  <!--  -->
+
+<h3>My Body Of Work</h3>
+<p>more to come: </p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'AGE')" id="defaultOpen">A.G.E</button>
+  <button class="tablinks" onclick="openCity(event, 'OCLTP')">OCLTP</button>
+  <button class="tablinks" onclick="openCity(event, 'DIWIHY')">Days I Wish I Had You</button>
+  <button class="tablinks" onclick="openCity(event, 'Diversity')">Diversity</button>
+  <button class="tablinks" onclick="openCity(event, 'NaW')">Needs & Wants</button>
+  <button class="tablinks" onclick="openCity(event, 'LTS')">Listen To Silence</button>
+  <button class="tablinks" onclick="openCity(event, 'MI')">My Ill.usion</button>
+
+</div>
+
+<div id="AGE" class="tabcontent">
+
+        <h3>A.G.E</h3>
+            <div>
+                  <h4>Album Unreleased</h4>
+                  <p>No worries, its pending.</p>
+                  <iframe style="border-radius:2px" src="https://open.spotify.com/embed/track/4aTlKrQP2EBnJKoURfaeuk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>            
+            </div>
+
+      </div>
+
+      <div id="OCLTP" class="tabcontent">
+
+        <h3>Optimistic Conversations Leading To Positivity [ E.P ]</h3>
+            <div>
+                <p>album on the way </p>
+                <iframe style="border-radius:2px" src="https://open.spotify.com/embed/track/6P5zPYNlsa2e6PL2jCFdd2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        
+            </div>
+      </div>
+
+      <div id="DIWIHY" class="tabcontent">
+
+        <h3>Days I Wish I Had You</h3>
+            <div>
+                <iframe style="border-radius:2px" src="https://open.spotify.com/embed/album/5dhCNI3ZPMKQod1PFkc65Y?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>         
+            </div>
+      </div>
+
+      <div id="Diversity" class="tabcontent">
+
+        <h3>Diversity</h3>
+            <div>
+                  <iframe style="border-radius:2px" src="https://open.spotify.com/embed/album/72UDNNi2rw5yn9Vm7JwyiW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>          
+            </div>
+      </div>
+
+      <div id="NaW" class="tabcontent">
+
+        <h3>Needs & Wants</h3>
+            <div>
+                <iframe style="border-radius:2px" src="https://open.spotify.com/embed/album/4aPjAT2jLbkm0XQPQVSO09?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>          
+            </div>
+      </div>
+
+      <div id="LTS" class="tabcontent">
+
+        <h3>Listen To Silence</h3>
+            <div>
+                  <p>Private Links</p>            
+            </div>
+      </div>
+
+      <div id="MI" class="tabcontent">
+
+        <h3>My Ill.usion</h3>
+            <div>
+                  <p>Private Links</p>            
+            </div>
+      </div>
+
+
+
+
+    </div>
+
+          <!--  -->
+
+
+          <!--  -->
+        <!-- <div class="footer">
+            <footer>www.elvndot.com</footer>
+        </div> -->
+
+
+
+
+  <!-- JS -->
+  <script>
+          function myFunction(){
+              var x = 
+              document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                  x.style.display = "none";
+              }
+                  else{
+                      x.style.display = "block";
+                  }
+              }
+  </script>
+<!--  -->
+<!--  -->
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
